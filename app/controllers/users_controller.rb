@@ -2,7 +2,8 @@ class UsersController < ApplicationController
 
   def index 
     @hello = "hello world"
-    render template: "users/index"
+    # indexを表示したいのでなくてもOK
+    # render template: "users/index"
   end
   
 end
