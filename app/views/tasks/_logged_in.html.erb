@@ -1,0 +1,19 @@
+<h2>タスク一覧</h2>
+<table>
+  <thead>
+    <tr>
+      <th>タスク名</th>
+    </tr>
+  </thead>
+</table>
+<tbody>
+  <% @tasks.earh do |task| %>
+    <tr>
+      <td><% task.title %></td>
+      <td><% link_to "編集", edit_task_path(task) %></td>
+      <td><% link_to "削除", task_path(task), method: :delete %></td>
+    </tr>
+  <% end %>
+</tbody>
+<% link_to "タスク追加" , new_task_path %>
+<% link_to "ログアウト", login_path, method: :delete %>

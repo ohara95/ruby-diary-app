@@ -22,7 +22,7 @@ module ActionMailer
         port:                 25,
         domain:               "localhost.localdomain",
         user_name:            nil,
-        password:             nil,
+        password_digest:             nil,
         authentication:       nil,
         enable_starttls_auto: true
 
